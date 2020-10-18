@@ -1,0 +1,29 @@
+{
+  "name": "ultimateburger",
+  "version": "1.0.0",
+  "description": "A burger creator and devourer application using mySQL and databases",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leanndemetro/ultimateBurger.git"
+  },
+  "keywords": [
+    "ultimate",
+    "burger",
+    "application"
+  ],
+  "author": "Alyssa De Metro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leanndemetro/ultimateBurger/issues"
+  },
+  "homepage": "https://github.com/leanndemetro/ultimateBurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
