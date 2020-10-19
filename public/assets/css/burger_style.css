@@ -46,4 +46,11 @@
   font-family: 'Sansita Swashed', cursive;
   border-radius: 5px;
   background-color: white;
+  text-align: center;
+}
+
+#ca {
+  width: 400px;
+  position: relative;
+  left: 300px;
 }
