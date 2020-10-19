@@ -31,4 +31,19 @@
   position: relative;
   left: 110px;
   padding: 5px;
+  top: 35px;
+}
+
+.addHeader {
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.burgerButton {
+  position: relative;
+  left: 450px;
+  padding: 10px;
+  font-family: 'Sansita Swashed', cursive;
+  border-radius: 5px;
+  background-color: white;
 }
