@@ -1,6 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $(".devoured-btn").on("click", function(event) {
+    $(".orderAgain-btn").on("click", function(event) {
       var id = $(this).data("id");
       var newDevoured = $(this).data("newdevoured");
   
@@ -13,19 +13,19 @@ $(function() {
         data: newDevouredState
       }).then(
         function() {
-          console.log("changed sleep to" + newDevoured);
+          console.log("order again" + newDevoured);
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
   
-    $(".create-form").on("submit", function(event) {
+    $(".burgerButton").on("click", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
       var newBurger = {
-        name: $("#bb").val().trim(),
+        name: $("#ca").val().trim(),
         devoured: 0
       };
       console.log(newBurger)
@@ -43,7 +43,9 @@ $(function() {
       );
     });
   
-    $(".delete-btn").on("click", function(event) {
+    //make delete button devour button
+    $(".devour-btn").on("click", function(event) {
+      //set a variable equal to the value of the name 
       var id = $(this).data("id");
   
       // Send the DELETE request.

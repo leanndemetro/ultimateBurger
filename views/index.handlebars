@@ -1,39 +1,49 @@
-<h1 class="mainHeader">Burgers!</h1>
+<h1 class="mainHeader">The Ultimate Burger Builder</h1>
 <div class="container">
-  <div class="sideOne">
-    <h2 class="header">Burgers that are ready to be eaten!</h2>
+  <div class="row">
+    <div class="sideOne">
+      <div class="col-sm-4">
+        <h2 class="leftHeader">Burgers that are ready to be eaten!</h2>
 
-    <ul>
-      {{#each burgers}}
-      {{#unless devoured}}
-      {{> burger-block}}
-      {{/unless}}
-      {{/each}}
-    </ul>
-  </div>
-  <div class="sideTwo">
-    <h2 class="header">Burgers that are eaten!</h2>
 
-    <ul class="header">
-      {{#each burgers}}
-      {{#if devoured}}
-      <li>
-        Devoured Burger: {{this.name}}
-      </li>
-      {{/if}}
-      {{/each}}
-    </ul>
-  </div>
-</div>
-<h2 class="header">Add a Burger</h2>
-<div class="flex-box2">
-  <form class="create-form">
-
-    <div class="form-group">
-      <label for="ca">Burger Name:</label>
-      <input type="text" id="ca" name="name">
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burger-block}}
+          {{/unless}}
+          {{/each}}
+      </div>
     </div>
 
-    <button type="submit" class="burgerButton"><i class="fas fa-hamburger"></i> Add Burger</button>
-  </form>
+    <div class= "col-sm-4">
+      <img id="burgerImg" src="https://i.imgur.com/eE0Y2TT.jpg" alt="burger">
+    </div>
+    <div class="sideTwo">
+      <div class="col-sm-4">
+        <h2 class="rightHeader">Burgers that are eaten!</h2>
+
+
+        <ul class="header">
+          {{#each burgers}}
+          {{#if devoured}}
+          <li>
+            Devoured Burger: {{this.name}}
+          </li>
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+<h2 class="header">Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <button type="submit" class="burgerButton"><i class="fas fa-hamburger"></i> Add Burger</button>
+</form>

@@ -1,0 +1,34 @@
+.mainHeader {
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
+
+}
+
+.sideOne {
+  float: left;
+}
+
+.leftHeader {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 15px;
+}
+
+.sideTwo{
+  float: right;
+}
+
+.rightHeader {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 15px;
+  position: relative;
+  bottom: 340px;
+  right: 20px;
+}
+
+#burgerImg {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  left: 110px;
+  padding: 5px;
+}
