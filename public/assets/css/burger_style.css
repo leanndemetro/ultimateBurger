@@ -1,56 +1,41 @@
 .mainHeader {
-  text-align: center;
   font-family: 'Sansita Swashed', cursive;
 
 }
 
-.sideOne {
-  float: left;
-}
+
 
 .leftHeader {
   font-family: 'Sansita Swashed', cursive;
   font-size: 15px;
 }
 
-.sideTwo{
-  float: right;
+.container {
+  text-align: center;
 }
+
+
+
 
 .rightHeader {
   font-family: 'Sansita Swashed', cursive;
   font-size: 15px;
-  position: relative;
-  bottom: 340px;
-  right: 20px;
 }
 
 #burgerImg {
   height: 350px;
   width: 350px;
-  position: relative;
-  left: 110px;
-  padding: 5px;
-  top: 35px;
+ 
 }
-
 .addHeader {
-  text-align: center;
+  
   font-family: 'Sansita Swashed', cursive;
 }
 
 .burgerButton {
-  position: relative;
-  left: 450px;
-  padding: 10px;
   font-family: 'Sansita Swashed', cursive;
   border-radius: 5px;
   background-color: white;
   text-align: center;
 }
 
-#ca {
-  width: 400px;
-  position: relative;
-  left: 300px;
-}
