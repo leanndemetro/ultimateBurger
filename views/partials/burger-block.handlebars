@@ -1,9 +1,7 @@
 <li>
-	{{!-- {{burger_name}} --}}
 
-	{{!-- <button class="orderAgain-btn btn waves-effect green btn-large" type="submit" name="action" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}DEVOUR!{{else}}ORDER AGAIN{{/if}}
-	</button> --}}
 
 	<button class="devour-btn btn waves-effect red lighten-1 btn-medium" type="submit" name="action" data-id="{{this.id}}">Devour {{burger_name}} <i class="fas fa-hamburger"></i></button>
+	<button class="orderDelete btn waves-effect red lighten-1 btn-medium" type="submit" name="action" data-id="{{this.id}}"><i class="fas fa-ban"></i></button>
+	
 </li>

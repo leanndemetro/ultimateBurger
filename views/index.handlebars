@@ -32,7 +32,10 @@
           {{#each burgers}}
           {{#if devoured}}
           <li>
-            Devoured Burger: {{this.name}}
+            <button class="orderAgain-btn btn waves-effect red lighten-3 btn-medium" type="submit" name="action" data-id="{{this.id}}" data-reOrdered="{{burger_name}}">
+		      {{burger_name}} <i class="fas fa-hamburger"></i>
+	      </button>
+            <button class="devouredDelete btn waves-effect red lighten-3 btn-medium" type="submit" name="action" data-id="{{this.id}}"><i class="fas fa-ban"></i></button>
           </li>
           {{/if}}
           {{/each}}
